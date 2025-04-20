@@ -1,3 +1,5 @@
+// laravel get and post mathed 
+
 <!DOCTYPE html>
 <html lang="en">
 
