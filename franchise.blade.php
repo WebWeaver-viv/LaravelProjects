@@ -36,7 +36,7 @@
             display: flex;
             justify-content: center;
             background-color: rgb(203, 248, 233);
-            height: 75vh;
+            height: 85vh;
         }
 
         .franchise-form {
@@ -48,7 +48,7 @@
             border-radius: 6px;
             margin-top: 25px;
             width: 600px;
-            height: 60vh;
+            height: auto;
             background-color: rgb(247, 230, 208);
         }
 
@@ -102,7 +102,7 @@
         <div class="franchise-box">
 
             <div class="franchise-form">
-              <form action="/submit-franchise" method="POST">
+              <form action="/submit-franchise" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="input-area">
                     <span class="form-heading">Full Name:</span>
@@ -124,6 +124,15 @@
                     <span class="form-heading">City:</span>
                     <input class="franchise-input-box" type="text" name="city" id="city">
                 </div>
+                <div class="input-area">
+                    <span class="form-heading">upload image:</span>
+                    <input class="franchise-input-box" type="file" name="image" id="image">
+                </div>
+                <div class="input-area">
+                    <span class="form-heading">upload video:</span>
+                    <input class="franchise-input-box" type="file" name="video" id="video">
+                </div>
+                
                 <button class="submit-button" type="submit">Submit</button>
             </form>
             
