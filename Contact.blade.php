@@ -42,7 +42,7 @@
                             <span class="contact-name-s1">example@example.com</span>
                         </div>
 
-
+        
                     </div>
                     <div class="message-box">
                         <div class="contact-name-box">
